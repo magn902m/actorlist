@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#actor_li {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.image {
+  height: 6rem;
+  width: 12rem;
+  background-color: #000;
+}
+
+.img_div {
+  display: flex;
+  justify-content: center;
+}
+
+.fullname,
+.movie {
+  text-align: center;
+}
+
+/* .fullname {
+    padding: 0.5rem 0rem 0rem 1rem;
+} */
+
+/* svg {
+  display: flex;
+  justify-items: center;
+} */
