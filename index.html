@@ -8,26 +8,37 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+      <header>
+        <h2>Actorlist</h2>
+      </header>
     <main>
       <section>
         <article class="sectionwrapper">
-          <section id="actor_li"></section>
+            <section id="actor_li"></section>
         </article>
       </section>
     </main>
 
     <template>
-      <article>
-          <div class="img_div">
-        <img class="image" src="" alt="">
-    </div>
-        <!-- <svg>
-            <rect width="200" height="100"/> 
-        </svg> -->
+        <article>
+        <div class="img_div">
+            <img class="image" src="" alt="">
+        </div>
         <p class="fullname"></p>
         <h3 class="movie"></h3>
       </template>
     </template>
+
+    <section id="popup">
+        <button>X</button>
+         <article>
+            <div class="img_div">
+                <img class="image" src="" alt="">
+            </div>
+            <p class="fullname"></p>
+            <h3 class="movie"></h3>
+        </article>
+      </section>
 
     <script src="script.js"></script>
   </body>
