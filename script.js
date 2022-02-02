@@ -21,7 +21,7 @@ function viewActorsList() {
   actors.forEach((actor) => {
     let clon = temp.cloneNode(true).content;
     // document.querySelector(".image").innerHTML += `<img src="${movie.svg}" alt="movie icon">`;
-    clon.querySelector(".fullname").textContent = actor.fullname;
+    clon.querySelector(".fullname").textContent = "Actor: " + actor.fullname;
     clon.querySelector(".image").addEventListener("click", () => showDetails(actor));
     container.appendChild(clon);
   });
@@ -38,6 +38,6 @@ function showDetails(actorDetails) {
 
   const popup = document.querySelector("#popup");
   popup.style.display = "block";
-  popup.querySelector(".fullname").textContent = actorDetails.fullname;
-  popup.querySelector(".movie").textContent = actorDetails.movie;
+  popup.querySelector(".fullname").textContent = "Actor: " + actorDetails.fullname;
+  popup.querySelector(".movie").textContent = "Movie: " + actorDetails.movie;
 }
